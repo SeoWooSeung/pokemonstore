@@ -27,18 +27,21 @@
 }
 
 .header .header_wrap .gnb span {
-    padding: 0 8px 4px 3px;
+    padding: 0 8px 6px 3px;
     border-radius: 20px;
     color: #fff;
     background: #f00;
     margin: 0 0 0 2px;
-    font-size: 14px;
+    font-size: 12px;
+    align-items: center;
 }
 
 .header .header_wrap .gnb ul {
     display: flex;
     gap: 60px;
 }
+
+.header .header_wrap .gnb ul li {}
 
 .header .header_wrap .search a i {
     padding: 10px;
@@ -102,7 +105,7 @@
     border-radius: 50%;
     top: 10px;
     left: 7px;
-    transform: translate(-8%,8%);
+    transform: translate(-8%, 8%);
     cursor: pointer;
     background: #fff;
 }
@@ -193,39 +196,38 @@
     display: block;
     font-size: 18px;
     font-weight: 700;
-    color:#E60012;
+    color: #E60012;
     text-align: center;
 }
 
-/* *********************************** */
+/* ******************************************************* */
 
-.scrolling_container {
-    overflow: hidden;
-    white-space: nowrap;
-}
 
-.scrolling-content {
-    display: inline-block;
-}
-
-.scrolling_container  .scrolling_content .itm {
+.scrolling_container .scrolling_content {
     height: 60px;
-background: url(../images/track.png)no-repeat center center;
-background-repeat:repeat-x;
-background-size: auto 24px;
-background-position: 0 50%;
-background-color:#ffe100 ;
+    background: #ffe100;
 
-animation: scrolling 70s linear infinite;
+}
+
+.scrolling_container .scrolling_content .track {
+    width: 100%;
+    height: 60px;
+    background-image: url(../images/track.png);
+    background-repeat: repeat-x;
+    background-position-x: 0;
+    background-position-y: center;
+    animation: scrolling 100s linear infinite;
 }
 
 @keyframes scrolling {
     0% {
-        transform: translateX(100%);
+        background-position-x: 0;
     }
+
     100% {
-        transform: translateX(-100vw);
+        background-position-x: 100%;
     }
+
 }
 
 /* ************************main_content************************************* */
@@ -261,12 +263,12 @@ animation: scrolling 70s linear infinite;
     letter-spacing: -2px;
 }
 
-.main_content .inner .rt_box ul img{
+.main_content .inner .rt_box ul img {
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
 }
 
 .main_content .inner .rt_box h2 span {
-    color:#E60012;
+    color: #E60012;
 }
 
 .main_content .inner .rt_box p {
@@ -278,10 +280,10 @@ animation: scrolling 70s linear infinite;
 }
 
 .main_content .inner .rt_box .desc a {
-background: #E60012;
-padding: 8px 38px;
-color: #fff;
-border-radius: 50px;
+    background: #E60012;
+    padding: 8px 38px;
+    color: #fff;
+    border-radius: 50px;
 }
 
 .main_content .inner .rt_box ul {
@@ -297,35 +299,33 @@ border-radius: 50px;
 
 /* ********************strack************************************ */
 
-.track_container {
-    /* padding: 0 0 80px 0; */
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.scrolling-track_content {
-    display: inline-block;
-}
-
-.track_container  .track_content .itm {
+.scroll_container .scroll_content {
     height: 60px;
-background: url(../images/track02.png)no-repeat center center;
-background-repeat:repeat-x;
-background-size: auto 24px;
-background-position: 0 50%;
-background-color:#201214 ;
+    background: #191919;
 
-animation: scrolling 70s linear infinite;
 }
 
-@keyframes scrolling {
+.scroll_container .scroll_content .track {
+    width: 100%;
+    height: 60px;
+    background-image: url(../images/track02.png);
+    background-repeat: repeat-x;
+    background-position-x: 0;
+    background-position-y: center;
+    animation: scroll 100s linear infinite;
+}
+
+@keyframes scroll {
     0% {
-        transform: translateX(100%);
+        background-position-x: 100%;
     }
+
     100% {
-        transform: translateX(-100vw);
+        background-position-x: 0%;
     }
+
 }
+
 
 
 /* *********************************best_itm***************************** */
@@ -359,7 +359,7 @@ animation: scrolling 70s linear infinite;
 
 .best_itm .inner {
     display: flex;
-    gap: 10px;   
+    gap: 10px;
 }
 
 .best_itm .inner>* {
@@ -376,10 +376,10 @@ animation: scrolling 70s linear infinite;
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 60px; 
+    width: 60px;
     height: 60px;
     background: url(../images/best_01.png);
-background-size: 100%;
+    background-size: 100%;
 }
 
 .best_itm .lt_box img {
@@ -397,10 +397,10 @@ background-size: 100%;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
 }
 
-.best_itm .rt_box .grid_box ul  {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 30px;
+.best_itm .rt_box .grid_box ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .best_itm .rt_box .grid_box ul li {
@@ -412,40 +412,43 @@ gap: 30px;
     position: absolute;
     top: -20px;
     left: -20px;
-    width: 60px; 
+    width: 60px;
     height: 60px;
-background: url(../images/best_02.png);
-background-size: 100%;
+    background: url(../images/best_02.png);
+    background-size: 100%;
 }
+
 .best_itm .rt_box .grid_box ul li:nth-child(2):before {
     content: "";
     position: absolute;
     top: -20px;
     left: -20px;
-    width: 60px; 
+    width: 60px;
     height: 60px;
-background: url(../images/best_03.png);
-background-size: 100%;
+    background: url(../images/best_03.png);
+    background-size: 100%;
 }
+
 .best_itm .rt_box .grid_box ul li:nth-child(3):before {
     content: "";
     position: absolute;
     top: -20px;
     left: -20px;
-    width: 60px; 
+    width: 60px;
     height: 60px;
-background: url(../images/best_04.png);
-background-size: 100%;
+    background: url(../images/best_04.png);
+    background-size: 100%;
 }
+
 .best_itm .rt_box .grid_box ul li:nth-child(4):before {
     content: "";
     position: absolute;
     top: -20px;
     left: -20px;
-    width: 60px; 
+    width: 60px;
     height: 60px;
-background: url(../images/best_05.png);
-background-size: 100%;
+    background: url(../images/best_05.png);
+    background-size: 100%;
 }
 
 /* ************************footer********************************* */
@@ -458,7 +461,7 @@ background-size: 100%;
     text-align: center;
 }
 
-.footer .footer_wrap ul{
+.footer .footer_wrap ul {
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -475,10 +478,10 @@ background-size: 100%;
 .footer .footer_wrap .address>ul {
     display: flex;
     gap: 20px;
-    font-size:14px;
+    font-size: 14px;
     margin: 0 0 8px 0;
     color: #999;
-} 
+}
 
 .footer .footer_wrap .copy {
     font-size: 14px;
