@@ -8,7 +8,7 @@
     <meta name="title" content="포켓몬스토어온라인">
     <meta name="description" content="포켓몬스토어온라인">
 
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/ic_ball_01.svg" type="image/x-icon">
     <title>포켓몬스토어온라인</title>
 
     <link rel="stylesheet" href="./css/reset.css">
@@ -29,7 +29,7 @@
                 <h1><a href="/"><img src="./images/Logo_PC1.png" alt=""></a></h1>
                 <nav class="gnb">
                     <ul>
-                        <li><a href="">포켓몬 스토어<span>original</span></a></li>
+                        <li><a href="">포켓몬 스토어</a></li>
                         <li><a href="">BEST</a></li>
                         <li><a href="">NEW ARRIVAL</a></li>
                         <li><a href="">이벤트</a></li>
@@ -60,17 +60,23 @@
                     <div class="img_box">
                         <ul>
                             <li>
-                                <a href="">
-                                    <img src="./images/store_01.jpg" alt="">
-                                </a>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_01.jpg" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
                                 <p>포켓몬센터 쫀득쫀득 <br />
                                     봉제인형 쫀도기</p>
                                 <span>65,000원</span>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="./images/store_02.png" alt="">
-                                </a>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_02.png" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
                                 <p>
                                     포켓몬 스토어<br />
                                     아크릴 벽시계 잠만보
@@ -78,30 +84,46 @@
                                 <span>38,000원</span>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="./images/store_03.png" alt="">
-                                </a>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_03.png" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
                                 <p>포켓몬 스토어 <br />
                                     룸 슬리퍼 푸린</p>
                                 <span>25,000원</span>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="./images/store_04.png" alt="">
-                                </a>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_04.png" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
                                 <p>포켓몬 스토어 <br />
                                     룸 슬리퍼 잠만보</p>
                                 <span>25,000원</span>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="./images/store_05.png" alt="">
-                                </a>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_05.png" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
                                 <p>포켓몬 스토어 인테리어 <br />
                                     아크릴 거울 메타몽</p>
                                 <span>35,000원</span>
                             </li>
                         </ul>
+                        <script>
+                            $(function () {
+                                $('.store .inner .img_box .case button').on('click', function () {
+                                    alert('상품 찜 기능은 로그인 후 이용하실 수 있습니다. ')
+                                })
+                            })
+                        </script>
                     </div>
                 </div>
             </section>
@@ -197,7 +219,7 @@
                     <ul>
                         <li>통신판매업신고번호 : 제 2017-용인수지-0204호</li>
                         <li>개인정보보호책임자 : 박승환 </li>
-                        <li> 이메일 : store@pokemonkorea.co.kr</li>
+                        <li> 이메일 : <a href="">store@pokemonkorea.co.kr</a></li>
                     </ul>
                     <ul>
                         <li>대표번호 : 031-272-0194</li>
@@ -218,6 +240,7 @@
             </div>
         </footer>
     </div>
+    <div id="custom-element"></div>
 </body>
 
 </html>

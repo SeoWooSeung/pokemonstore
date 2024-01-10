@@ -26,4 +26,6 @@ $(function () {
         $('.main_slide').slick('slickNext')
     });
     
+
+    
 });

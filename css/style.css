@@ -129,6 +129,7 @@
 /* *************************store********************************* */
 
 .store {
+    position: relative;
     padding: 80px 0;
 }
 
@@ -174,6 +175,19 @@
     flex: 1;
 }
 
+.store .inner .img_box .case {
+    position: relative;
+}
+
+.store .inner .img_box .case button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .store .inner .img_box ul li a {
     padding: 8px;
     display: block;
@@ -195,7 +209,7 @@
 .store .inner .img_box ul li span {
     display: block;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 800;
     color: #E60012;
     text-align: center;
 }
@@ -331,6 +345,7 @@
 /* *********************************best_itm***************************** */
 
 .best_itm {
+    position: relative;
     padding: 100px 0;
 }
 
@@ -338,7 +353,7 @@
     font-size: 38px;
     font-weight: 800;
     margin: 0 0 14px 0;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
 }
 
 .best_itm .desc {
@@ -353,8 +368,9 @@
     display: block;
     font-size: 16px;
     color: #666;
-    margin: 0 0 38px 0;
+    margin: 0 0 48px 0;
     font-weight: 500;
+    letter-spacing: -0.8px;
 }
 
 .best_itm .inner {
@@ -390,6 +406,10 @@
 .best_itm .rt_box {
     padding: 20px;
     display: flex;
+}
+
+.best_itm .rt_box .case {
+    position: relative;
 }
 
 .best_itm .rt_box img {
@@ -494,3 +514,5 @@
     color: #999;
     line-height: 20px;
 }
+
+/* 마우스휠 */
