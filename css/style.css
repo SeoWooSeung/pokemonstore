@@ -742,11 +742,8 @@
 
     .best_itm .inner {
         display: flex;
-        gap: 10px;
-    }
-
-    .best_itm .inner>* {
-        flex: 1;
+        gap: 0px;
+        flex-direction: column;
     }
 
     .best_itm .lt_box {
@@ -754,15 +751,19 @@
         padding: 20px;
     }
 
+    .best_itm .lt_box img {
+
+    }
+
     .best_itm .lt_box::before {
         content: "";
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 0px;
+        left: 0px;
         width: 60px;
         height: 60px;
         background: url(../images/best_01.png)no-repeat;
-        background-size: 50%;
+        background-size: 80%;
     }
 
     .best_itm .lt_box img {
@@ -787,7 +788,7 @@
     .best_itm .rt_box .grid_box ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 30px;
     }
 
     .best_itm .rt_box .grid_box ul li {
@@ -797,45 +798,45 @@
     .best_itm .rt_box .grid_box ul li:nth-child(1):before {
         content: "";
         position: absolute;
-        top: -10px;
-        left: -10px;
+        top: -20px;
+        left: -20px;
         width: 60px;
         height: 60px;
         background: url(../images/best_02.png)no-repeat;
-        background-size: 50%;
+        background-size: 70%;
     }
 
     .best_itm .rt_box .grid_box ul li:nth-child(2):before {
         content: "";
         position: absolute;
-        top: -10px;
-        left: -10px;
+        top: -20px;
+        left: -20px;
         width: 60px;
         height: 60px;
         background: url(../images/best_03.png)no-repeat;
-        background-size: 50%;
+        background-size: 70%;
     }
 
     .best_itm .rt_box .grid_box ul li:nth-child(3):before {
         content: "";
         position: absolute;
-        top: -10px;
-        left: -10px;
+        top: -20px;
+        left: -20px;
         width: 60px;
         height: 60px;
         background: url(../images/best_04.png)no-repeat;
-        background-size: 50%;
+        background-size: 70%;
     }
 
     .best_itm .rt_box .grid_box ul li:nth-child(4):before {
         content: "";
         position: absolute;
-        top: -10px;
-        left: -10px;
+        top: -20px;
+        left: -20px;
         width: 60px;
         height: 60px;
         background: url(../images/best_05.png)no-repeat;
-        background-size: 50%;
+        background-size: 70%;
     }
 }
 
