@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="포켓몬스토어온라인">
+    <meta name="description" content="포켓몬스토어온라인">
+
+    <link rel="shortcut icon" href="./images/ic_ball_01.svg" type="image/x-icon">
+    <title>포켓몬스토어온라인</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header" class="header">
+            <div class="header_wrap">
+                <h1><a href="/"><img src="./images/Logo_PC1.png" alt=""></a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="">포켓몬 스토어</a></li>
+                        <li><a href="">BEST</a></li>
+                        <li><a href="">NEW ARRIVAL</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">브랜드 스토어</a></li>
+                    </ul>
+                </nav>
+                <button class="mopen">
+                    <span class="material-symbols-outlined icon">
+                        menu
+                    </span>
+                </button>
+                <div class="search">
+                    <a href=""><i class="xi-search"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" class="main">
+            <section class="main_visual">
+                <h2 class="blind">메인 슬라이드</h2>
+                <div class="main_slide">
+                    <div class="itm01 itm"></div>
+                    <div class="itm02 itm"></div>
+                    <div class="itm03 itm"></div>
+                    <div class="itm04 itm"></div>
+                </div>
+            </section>
+
+            <section class="store">
+                <div class="inner">
+                    <h2>NEW ARRIVAL</h2>
+                    <span>새로운 상품들을 만나보세요!</span>
+                    <div class="img_box">
+                        <ul>
+                            <li>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_01.jpg" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
+                                <p>포켓몬센터 쫀득쫀득 <br />
+                                    봉제인형 쫀도기</p>
+                                <span>65,000원</span>
+                            </li>
+                            <li>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_02.png" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
+                                <p>
+                                    포켓몬 스토어<br />
+                                    아크릴 벽시계 잠만보
+                                </p>
+                                <span>38,000원</span>
+                            </li>
+                            <li>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_03.png" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
+                                <p>포켓몬 스토어 <br />
+                                    룸 슬리퍼 푸린</p>
+                                <span>25,000원</span>
+                            </li>
+                            <li>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_04.png" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
+                                <p>포켓몬 스토어 <br />
+                                    룸 슬리퍼 잠만보</p>
+                                <span>25,000원</span>
+                            </li>
+                            <li>
+                                <div class="case">
+                                    <a href="">
+                                        <img src="./images/store_05.png" alt="">
+                                    </a>
+                                    <button><img src="./images/ic_wish_off.svg" alt=""></button>
+                                </div>
+                                <p>포켓몬 스토어 인테리어 <br />
+                                    아크릴 거울 메타몽</p>
+                                <span>35,000원</span>
+                            </li>
+                        </ul>
+                        <script>
+                            $(function () {
+                                $('.store .inner .img_box .case button').on('click', function () {
+                                    alert('상품 찜 기능은 로그인 후 이용하실 수 있습니다. ')
+                                })
+                            })
+                        </script>
+                    </div>
+                </div>
+            </section>
+
+            <div class="scrolling_container ">
+                <div class="scrolling_content">
+                    <div class="track itm"></div>
+                </div>
+            </div>
+            <section class="main_content">
+                <div class="inner">
+                    <div class="lf_box">
+                        <a href=""><img src="./images/left_content_img.png" alt=""></a>
+                    </div>
+
+                    <div class="rt_box">
+                        <div class="desc">
+                            <h2>POKÉMON <span>STORE</span></h2>
+                            <p>어떤 포켓몬을 만나게 될까?! <br />
+                                랜덤 상품 기획전!</p>
+                            <a href="">더보러가기</a>
+                        </div>
+                        <ul>
+                            <li><a href=""><img src="./images/right_content_img01.png" alt=""></a></li>
+                            <li><a href=""><img src="./images/right_content_img02.png" alt=""></a></li>
+                            <li><a href=""><img src="./images/right_content_img03.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="scroll_container ">
+                <div class="scroll_content">
+                    <div class="track itm"></div>
+                </div>
+            </div>
+
+
+
+            <section class="best_itm">
+                <div class="desc">
+                    <h2>BEST ITEM</h2>
+                    <span>가장 많이 사랑받은 상품들</span>
+                </div>
+                <div class="inner">
+                    <div class="lt_box">
+                        <a href=""><img src="./images/best01.png" alt=""></a>
+                    </div>
+                    <div class="rt_box">
+                        <div class="grid_box">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="./images/best02.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./images/best03.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./images/best04.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./images/best05.png" alt="">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="footer_wrap inner">
+                <ul class="sub">
+                    <li><a href="">브랜드 소개</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">멤버십 이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                </ul>
+                <address class="address">
+                    <ul>
+                        <li>회사명 : (주)포켓몬코리아</li>
+                        <li>대표 : 임재범</li>
+                        <li>주소 : 경기도 용인시 수지구 신수로 801(동천동)</li>
+                    </ul>
+                    <ul>
+                        <li>통신판매업신고번호 : 제 2017-용인수지-0204호</li>
+                        <li>개인정보보호책임자 : 박승환 </li>
+                        <li> 이메일 : <a href="">store@pokemonkorea.co.kr</a></li>
+                    </ul>
+                    <ul>
+                        <li>대표번호 : 031-272-0194</li>
+                        <li>사업자 등록번호 : 113-86-07676</li>
+                        <li> <a href="">[사업자정보확인]</a></li>
+                    </ul>
+                    <div class="copy">
+                        &copy;Copyright © (주)포켓몬코리아. All rights reserved.
+                    </div>
+                    <div class="copyright">
+                        <p>
+                            ©Pokémon. ©Nintendo/Creatures Inc./GAME FREAK inc. <br />
+                            ©Nintendo, Creatures, GAME FREAK, TV Tokyo, ShoPro, JR Kikaku. ©Pokémon.<br />
+                            포켓몬스터, 포켓몬, Pokémon은 Nintendo의 상표입니다.
+                        </p>
+                    </div>
+                </address>
+            </div>
+        </footer>
+    </div>
+    <div id="custom-element"></div>
+</body>
+
+</html>
