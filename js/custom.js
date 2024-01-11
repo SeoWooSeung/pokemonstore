@@ -28,7 +28,7 @@ $(function () {
     
 
     $('.mopen').on('click',function () {
-        $('.gnb').toggleClass('on')
+        $('.gnb').toggleClass('on');
     });
     
     $('.gnb').on('wheel',function(e){
