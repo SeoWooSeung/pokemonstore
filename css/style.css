@@ -542,9 +542,9 @@
 }
 
 .main_content .inner .rt_box h2 {
-    font-size: 38px;
+    font-size: 48px;
     font-weight: 800;
-    margin: 0 0 14px 0;
+    margin: 0 0 32px 0;
     letter-spacing: -2px;
 }
 
@@ -556,13 +556,23 @@
     color: #E60012;
 }
 
-.main_content .inner .rt_box p {
+.main_content .inner .rt_box .td {
+    display: block;
     font-size: 18px;
     color: #666;
-    margin: 0 0 48px 0;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.main_content .inner .rt_box .tt {
+    display: block;
+    font-size: 18px;
+    color: #666;
+    margin: 0 0 40px 0;
     font-weight: 500;
     line-height: 1.2;
 }
+
 
 .main_content .inner .rt_box .desc a {
     background: #E60012;
